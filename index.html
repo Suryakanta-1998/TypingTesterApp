@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="mdb.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <title>Typing App</title>
+</head>
+<body>
+    
+    <!-- Header  -->
+    <header class="main-header text-center">
+        <h1>Typing Tester App</h1>
+    </header>
+
+    <div class=" container-fluid">
+        <div class="row">
+            <div class=" col-md-9 mt-3 col-lg-9 cl-md-12 col-sm-12">
+                <div class="card">
+                    <div class=" card-body">
+                      <section class="side-1-section">
+                        <section class=" text-section">
+                            <div class=" tet-section-div">
+                                 <p id="original-text">Thanks For Learning UI Technologies.</p>
+                            </div>
+                        </section>
+                        <br>
+                        <section class="text-area-section ">
+                            <div class="tet-area-div ">
+                                <textarea onpaste="return false" id="text-area" rows="4" cols="53" placeholder="The clock start when you are typing..." class="col-md-9 col-sm-9"></textarea>
+                            </div>
+                        </section>
+                        <br>
+                        <section class=" result-section text-center">
+                            <div class="result-section-div">
+                                <span class="timer">
+                                    <span id="minutes">00</span> :
+                                    <span id="seconds">00</span> :
+                                    <span id="m-seconds">00</span> 
+                                </span>
+                                   <div>
+                                       <button type="button" id="reset">Reset</button>
+                                   </div>
+                            </div>
+                        </section>
+
+                        <section class="cong-section">
+                            <div class="cong-section-div">
+                                <h3 style="display: none;" id="congo">Congratulations</h3>
+                            </div>
+                            <audio id="claps">
+                                <source src="clap.wav" type="audio/wav">
+                            </audio>
+                        </section>
+
+                     </section>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-3 mt-4">
+                <section class="side-2-section  col-md-12 col-sm-12 ">
+                    <button class="btn btn-indigo mt-2 rounded-pill" onclick="changeText(0)">Lesson 1</button>
+                    <button class="btn btn-orange  mt-2 rounded-pill" onclick="changeText(1)">Lesson 2</button>
+                    <button class="btn btn-deep-orange  mt-2 rounded-pill" onclick="changeText(2)">Lesson 3</button>
+                    <button class="btn btn-primary  mt-2 rounded-pill" onclick="changeText(3)">Lesson 4</button>
+                    <button class="btn btn-info  mt-2 rounded-pill" onclick="changeText(5)">Lesson 5</button>
+                    <button class="btn btn-dark  mt-2 rounded-pill" onclick="changeText(6)">Lesson 6</button>
+                    <button class="btn btn-dark-green mt-2 rounded-pill" onclick="changeText(7)">Lesson 7</button>
+                    <button class="btn btn-light-blue mt-2 rounded-pill" onclick="changeText(8)">Lesson 8</button>
+                    <button class="btn btn-blue-grey mt-2 rounded-pill" onclick="changeText(9)">Lesson 9</button>
+                    <button class="btn btn-deep-purple  mt-2 rounded-pill" onclick="changeText(4)">Lesson 10</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>Copyrights&copy;:2021 </h2>
+        <p>All Rights Reserved</p>
+        <small>Developed And Maintained By <span style="color: brown;">Suryakanta Behera</span></small>
+    </footer>
+    <script src="jscode.js"></script>
+</body>
+</html>
